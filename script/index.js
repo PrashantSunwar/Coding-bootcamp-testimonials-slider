@@ -1,4 +1,5 @@
-const btnSwitch = document.querySelectorAll("#content-switcher");
+const btnSwitch = document.querySelector("#content-switcher-1");
+const btnSwitch2 = document.querySelector("#content-switcher-2");
 const testinomialOne = document.querySelector(".testinomial-one");
 const testinomialSecond = document.querySelector(".testinomial-second");
 
@@ -13,8 +14,7 @@ function fn(event) {
   }
 }
 
-btnSwitch.forEach((btn) => {
-  btn.addEventListener("click", fn);
-});
+btnSwitch.addEventListener('click', fn);
+btnSwitch2.addEventListener('click', fn);
 
 window.addEventListener("keydown", fn);
